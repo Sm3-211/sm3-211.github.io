@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Mustafa Akbar</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo"></div>
+    <div class="nav-links">
+        <a href="index.html" class="active">homepage</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Mustafa Akbar</h1>
+    <p class="subtitle">Game Designer</p>
+</header>
+
+<!-- src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0"-->
+
+<div class="video-container">
+    <iframe
+    src="https://www.youtube-nocookie.com/embed/xcbQzDCbr6g?si=GJ0fyuXgSL8s6NCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</div>
+
+<footer>
+    © <span id="year"></span> Mustafa Akbar
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
