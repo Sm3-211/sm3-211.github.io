@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Name</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo"></div>
+    <div class="nav-links">
+        <a href="index.html">homepage</a>
+        <a href="projects.html" class="active">projects</a>
+        <a href="about.html">about</a>
+    </div>
+</nav>
+
+<div class="project-detail">
+
+    <h1>Project Name</h1>
+
+    <div class="project-meta">
+        <p class="project-date">2025</p>
+        <p class="project-tags">personal, game jam</p>
+    </div>
+
+    <div class="project-layout">
+
+        <div class="project-main">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+            </p>
+
+        </div>
+
+        <aside class="project-sidebar">
+
+            <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                allowfullscreen>
+            </iframe>
+
+            <img src="images/project-1.jpg" alt="">
+            <img src="images/project-1.jpg" alt="">
+            <img src="images/project-1.jpg" alt="">
+
+        </aside>
+
+    </div>
+
+    <a class="back-link" href="projects.html">back to projects</a>
+
+</div>
+
+<footer>
+    © <span id="year"></span> Mustafa Akbar
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
