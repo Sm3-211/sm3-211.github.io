@@ -65,7 +65,7 @@ p { margin-bottom: 1rem; }
 ========================== */
 
 .page-content {
-    padding: 0 2rem; /* consistent horizontal spacing for all pages */
+    padding: 0 2rem;
 }
 
 /* ==========================
@@ -83,7 +83,6 @@ nav {
     border-bottom: 1px solid var(--base02);
     margin-bottom: 2rem;
     z-index: 100;
-
     flex-wrap: wrap;
 }
 
@@ -141,7 +140,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 2rem;
-    padding: 2rem;  /* internal padding */
+    padding: 2rem;
     border-bottom: 1px solid var(--base02);
     text-decoration: none;
     transition: background 0.15s ease;
@@ -173,7 +172,7 @@ header {
 .project-card:hover .project-image img { filter: grayscale(0%); }
 
 /* ==========================
-   PROJECT META (DATE + TAGS)
+   PROJECT META
 ========================== */
 
 .project-meta {
@@ -227,7 +226,8 @@ header {
     align-self: start;
 }
 
-.project-sidebar iframe, .project-sidebar img {
+.project-sidebar iframe,
+.project-sidebar img {
     width: 100%;
     border: 1px solid var(--base02);
 }
@@ -255,8 +255,21 @@ header {
    ABOUT
 ========================== */
 
-.about-links { margin-top: 2rem; }
-.about-links a { display: block; margin-bottom: 0.5rem; }
+.about-links {
+    margin-top: 2rem;
+}
+
+.about-links a {
+    display: block;        /* keeps them on separate lines */
+    width: fit-content;    /* prevents full-width stretching */
+    margin-bottom: 0.5rem;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.about-links a:hover {
+    color: var(--teal);
+}
 
 /* ==========================
    FOOTER
