@@ -60,17 +60,13 @@ h1 { margin-bottom: 0.5rem; }
 .subtitle { color: var(--base01); }
 p { margin-bottom: 1rem; }
 
-/* ==========================
-   PAGE CONTENT WRAPPER
-========================== */
+/*PAGE CONTENT WRAPPER*/
 
 .page-content {
     padding: 0 2rem;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
+/*NAVBAR*/
 
 nav {
     position: sticky;
@@ -79,9 +75,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
+    padding: 1.5rem;
     border-bottom: 1px solid var(--base02);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     z-index: 100;
     flex-wrap: wrap;
 }
@@ -108,9 +104,7 @@ nav {
     color: var(--teal);
 }
 
-/* ==========================
-   HOMEPAGE
-========================== */
+/*HOMEPAGE*/
 
 header {
     margin-bottom: 2rem;
@@ -130,9 +124,7 @@ header {
     display: block;
 }
 
-/* ==========================
-   PROJECT LIST
-========================== */
+/* PROJECT LIST */
 
 .project-list { display: flex; flex-direction: column; }
 
@@ -171,9 +163,7 @@ header {
 
 .project-card:hover .project-image img { filter: grayscale(0%); }
 
-/* ==========================
-   PROJECT META
-========================== */
+/* PROJECT META */
 
 .project-meta {
     display: flex;
@@ -202,9 +192,7 @@ header {
     gap: 1.5rem;
 }
 
-/* ==========================
-   PROJECT PAGE
-========================== */
+/* PROJECT PAGE */
 
 .project-detail { margin-top: 2rem; }
 
@@ -234,9 +222,7 @@ header {
 
 .project-sidebar iframe { aspect-ratio: 16/9; }
 
-/* ==========================
-   LINKS
-========================== */
+/* LINKS */
 
 .back-link {
     display: inline-block;
@@ -251,9 +237,7 @@ header {
 
 .back-link:hover { color: var(--teal); }
 
-/* ==========================
-   ABOUT
-========================== */
+/* ABOUT */
 
 .about-links {
     margin-top: 2rem;
@@ -271,9 +255,7 @@ header {
     color: var(--teal);
 }
 
-/* ==========================
-   FOOTER
-========================== */
+/* FOOTER */
 
 footer {
     margin-top: 4rem;
@@ -283,9 +265,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ==========================
-   MOBILE
-========================== */
+/* MOBILE */
 
 @media (max-width: 900px) {
     body {
