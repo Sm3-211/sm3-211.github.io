@@ -10,13 +10,35 @@
 <body>
 
 <nav>
-    <div class="nav-logo"></div>
+    <div class="nav-logo" id="themeToggle" title="Toggle theme"></div>
+
     <div class="nav-links">
-        <a href="../index.html">homepage</a>
-        <a href="../projects.html" class="active">projects</a>
+        <a href="../index.html" class="active">homepage</a>
+        <a href="../projects.html">projects</a>
         <a href="../about.html">about</a>
     </div>
 </nav>
+
+<script>
+(() => {
+    const root = document.documentElement;
+    const toggle = document.getElementById("themeToggle");
+
+    if (localStorage.getItem("theme") === "light") {
+        root.setAttribute("data-theme", "light");
+    }
+
+    toggle.addEventListener("click", () => {
+        if (root.getAttribute("data-theme") === "light") {
+            root.removeAttribute("data-theme");
+            localStorage.removeItem("theme");
+        } else {
+            root.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+        }
+    });
+})();
+</script>
 
 <div class="project-detail">
 
