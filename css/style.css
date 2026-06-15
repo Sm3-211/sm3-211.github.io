@@ -489,6 +489,12 @@ footer {
         height: 200px;
     }
 
+    .project-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     nav {
         gap: 1rem;
     }
@@ -502,4 +508,10 @@ footer {
     display: inline-block;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .nav-logo:hover {
+        background-image: inherit !important;
+    }
 }
