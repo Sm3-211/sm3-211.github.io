@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subdirective</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" type="image/x-icon" href="/files/favicon.ico">
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo" id="themeToggle" title="Toggle theme"></div>
+
+    <div class="nav-links">
+        <a href="../index.html" class="active">homepage</a>
+        <a href="../projects.html">projects</a>
+        <a href="../about.html">about</a>
+    </div>
+</nav>
+
+<script>
+(() => {
+    const root = document.documentElement;
+    const toggle = document.getElementById("themeToggle");
+
+    if (localStorage.getItem("theme") === "light") {
+        root.setAttribute("data-theme", "light");
+    }
+
+    toggle.addEventListener("click", () => {
+        if (root.getAttribute("data-theme") === "light") {
+            root.removeAttribute("data-theme");
+            localStorage.removeItem("theme");
+        } else {
+            root.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+        }
+    });
+})();
+</script>
+
+<div class="project-detail">
+
+    <h1>Subdirective</h1>
+
+    <div class="project-meta">
+        <p class="project-tags">University</p>
+        <p class="project-date">2025</p>
+    </div>
+
+    <div class="project-layout">
+
+        <div class="project-main">
+
+            <p>
+                Subdirective is a 2.5D top down shooter where players must clear rooms of enemies, find a key and move onto the next level.
+            </p>
+
+            <p>
+                The game features fast paced combat and randomised modifiers applied at the start of each level.
+            </p>
+
+            <p>
+                It is set in a sci fi world where humans have been replaced by robots. A technical error results in robots around the world blindly following the last directive they were given by humans, which in your case is to protect your cat (referred to as "the asset") at all costs. 
+            </p>
+
+            <p>
+                However, other robots blinded by their own directives have taken the asset and are guarding it with their lives.
+            </p>
+
+            <p>
+                The game features a pixel art style with a restrictive monochromatic colour scheme that also includes some colour highlights. The game also features 8 bit style sound effects. 
+            </p>
+
+            <p>
+                The project was part of the second module for my University course. I was the sole creator of this project, responsible for the design of all system, art and audio assets. 
+            </p>
+
+
+        </div>
+
+        <aside class="project-sidebar">
+
+            <iframe 
+                src="https://www.youtube-nocookie.com/embed/qO_xhlPX1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <img src="../files/cat1.png" alt="">
+            <img src="../files/placeholder.png" alt="">
+            <img src="../files/placeholder.png" alt="">
+
+        </aside>
+
+    </div>
+
+    <a class="back-link" href="../projects.html">back to projects</a>
+
+</div>
+
+<footer>
+    © <span id="year"></span> Mustafa Akbar
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

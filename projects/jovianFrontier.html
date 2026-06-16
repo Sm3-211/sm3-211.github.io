@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jovian Frontier</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" type="image/x-icon" href="/files/favicon.ico">
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo" id="themeToggle" title="Toggle theme"></div>
+
+    <div class="nav-links">
+        <a href="../index.html" class="active">homepage</a>
+        <a href="../projects.html">projects</a>
+        <a href="../about.html">about</a>
+    </div>
+</nav>
+
+<script>
+(() => {
+    const root = document.documentElement;
+    const toggle = document.getElementById("themeToggle");
+
+    if (localStorage.getItem("theme") === "light") {
+        root.setAttribute("data-theme", "light");
+    }
+
+    toggle.addEventListener("click", () => {
+        if (root.getAttribute("data-theme") === "light") {
+            root.removeAttribute("data-theme");
+            localStorage.removeItem("theme");
+        } else {
+            root.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+        }
+    });
+})();
+</script>
+
+<div class="project-detail">
+
+    <h1>Jovian Frontier</h1>
+
+    <div class="project-meta">
+        <p class="project-tags">University</p>
+        <p class="project-date">2024</p>
+    </div>
+
+    <div class="project-layout">
+
+        <div class="project-main">
+
+            <p>
+                Jovian Frontier is a strategic, territory control tabletop game that allows players to bluff 
+                and deceive their way to world domination.
+            </p>
+
+            <p>
+                4 players take on the roles of rival faction leaders competing across a hexagonal map of planets, 
+                moons, and space stations within the Jovian System.
+            </p>
+            
+            <p>
+                The game is built around simultaneous decision making.
+                Players can secretly deploy units and commit to actions before revealing their choices, making prediction and deception essential to success.
+            </p>
+
+            <p>
+                 A central mechanic is the morale system, representing the stability of a faction. This directly influences the survival of players in the game and can be 
+                 directly manipulated by enemy players.
+            </p>
+
+            <a href="../files/jovianFrontierRuleBook.pdf" target="_blank">
+                View Rule Book
+            </a>
+            
+            <p>
+
+            </p>
+
+            <p>
+                The game was created solely by me as part of the first module of my University course. 
+            </p>
+
+            <p>
+                
+            </p>
+
+            <p>
+                A physical prototype of the game was created using 3d printed pieces as well as a digital version within Tabletop Simulator. 
+            </p>
+
+        </div>
+
+        <aside class="project-sidebar">
+
+            <img src="../files/jovianFrontier1.png" alt="">
+            <img src="../files/jovianFrontier2.jpg" alt="">
+            <img src="../files/jovianFrontier3.jpg" alt="">
+
+        </aside>
+
+    </div>
+
+    <a class="back-link" href="../projects.html">back to projects</a>
+
+</div>
+
+<footer>
+    © <span id="year"></span> Mustafa Akbar
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

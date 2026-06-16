@@ -186,7 +186,7 @@ nav {
 
     padding: 0.9rem 0;
 
-    border-bottom: 3px solid var(--base02);
+    border-bottom: 2px solid var(--base02);
 
     margin-bottom: 1rem;
 }
@@ -204,17 +204,17 @@ nav {
 
 /* dark default */
 html:not([data-theme="light"]) .nav-logo {
-    background-image: url("../images/iconDark.png");
+    background-image: url("../files/iconDark.png");
 }
 
 /* light theme */
 html[data-theme="light"] .nav-logo {
-    background-image: url("../images/iconLight.png");
+    background-image: url("../files/iconLight.png");
 }
 
 /* hover overrides theme */
 .nav-logo:hover {
-    background-image: url("../images/iconHover.png") !important;
+    background-image: url("../files/iconHover.png") !important;
 }
 
 .nav-links {
@@ -288,6 +288,7 @@ h1 {
     width: 100%;
     height: 100%;
     border: 1px solid var(--base02);
+    display: block;
 }
 
 iframe {
@@ -308,7 +309,7 @@ iframe {
 
     padding: 1.4rem;
 
-    border-bottom: 3px solid var(--base02);
+    border-bottom: 2px solid var(--base02);
 
     transition: none;
 
@@ -369,7 +370,7 @@ iframe {
 .project-image {
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 20 / 13;
+    aspect-ratio: 16 / 9;
     border: 1px solid var(--base02);
     overflow: hidden;
 }
@@ -418,7 +419,7 @@ iframe {
 }
 
 .project-sidebar iframe {
-    aspect-ratio: 20 / 13;
+    aspect-ratio: 16 / 9;
     height: auto;
 }
 
@@ -432,8 +433,6 @@ footer {
 
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-
-    border-top: 3px solid var(--base02);
 
     color: var(--base01);
     font-size: 0.85rem;
