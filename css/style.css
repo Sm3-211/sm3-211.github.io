@@ -204,17 +204,17 @@ nav {
 
 /* dark default */
 html:not([data-theme="light"]) .nav-logo {
-    background-image: url("../files/iconDark.png");
+    background-image: url("../files/iconDark.webp");
 }
 
 /* light theme */
 html[data-theme="light"] .nav-logo {
-    background-image: url("../files/iconLight.png");
+    background-image: url("../files/iconLight.webp");
 }
 
 /* hover overrides theme */
 .nav-logo:hover {
-    background-image: url("../files/iconHover.png") !important;
+    background-image: url("../files/iconHover.webp") !important;
 }
 
 .nav-links {
