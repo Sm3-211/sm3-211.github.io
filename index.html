@@ -27,17 +27,19 @@
     if (localStorage.getItem("theme") === "light") {
         root.setAttribute("data-theme", "light");
     }
-
+ 
     toggle.addEventListener("click", () => {
         if (root.getAttribute("data-theme") === "light") {
             root.removeAttribute("data-theme");
             localStorage.removeItem("theme");
-        } else {
+        } 
+        
+        else {
             root.setAttribute("data-theme", "light");
             localStorage.setItem("theme", "light");
         }
-    });
-})();
+    })
+})()
 </script>
 
 <div class="home">
